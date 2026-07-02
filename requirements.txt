@@ -1,0 +1,6 @@
+# adx_diagnose 의존성
+azure-kusto-data>=6            # 엔진: KQL/관리명령(.show ...) — KustoClient
+azure-identity>=1.15          # 인증: DefaultAzureCredential(Entra ID) / 메트릭 인증
+# 계층 1 메트릭 (Azure Monitor) — 2.x(분리 패키지) 우선:
+azure-monitor-querymetrics    # MetricsClient (azure-monitor-query 2.x 계열)
+#  (1.x 를 쓰면) azure-monitor-query>=1.2,<2
